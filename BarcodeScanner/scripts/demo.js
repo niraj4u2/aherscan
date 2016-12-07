@@ -23,8 +23,6 @@
         scan: function (preferFrontCamera, showFlipCameraButton) {
             if (!this.checkSimulator()) {
                 cordova.plugins.barcodeScanner.scan(
-
-                    // success callback function
                     function (result) {
                         // wrapping in a timeout so the dialog doesn't free the app
                         setTimeout(function() {
